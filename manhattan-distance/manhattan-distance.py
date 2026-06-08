@@ -5,7 +5,10 @@ def manhattan_distance(x, y):
     Compute the Manhattan (L1) distance between vectors x and y.
     Must return a float.
     """
-    x = np.array(x)
-    y = np.array(y)
-    return float(np.sum(np.abs(x - y)))
+    n = len(x)
+    dist = 0
+    for i in range(n) :
+        dist += abs(x[i] - y[i])
+
+    return float(dist)
     pass
