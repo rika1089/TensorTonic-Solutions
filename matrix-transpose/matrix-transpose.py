@@ -7,14 +7,14 @@ def matrix_transpose(A):
     # Write code here
     n = len(A)
     m = len(A[0])
-
     transpose =[]
     for j in range(m) :
-        new_row = []
+        temp = []
         for i in range(n) :
-            new_row.append(A[i][j])
-        transpose.append(new_row)
+            temp.append(A[i][j])
+            
+        transpose.append(temp)
 
-    return np.array(transpose)    
-                
+    return np.array(transpose)
+    
     pass
