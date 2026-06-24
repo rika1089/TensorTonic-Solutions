@@ -22,3 +22,5 @@ def autocorrelation(series, max_lag):
             cov = np.sum((series[:-lag] - mean) * (series[lag:] - mean)) / n
             acf.append(float(cov / var))
     return acf
+    
+    # Write code here
