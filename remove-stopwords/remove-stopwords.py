@@ -3,10 +3,10 @@ def remove_stopwords(tokens, stopwords):
     Returns: list[str] - tokens with stopwords removed (preserve order)
     """
     # Your code here
-    tks = []
-    for token in tokens :
-        if token not in stopwords :
-            tks.append(token)
+    ans = []
+    for t in tokens :
+        if t not in stopwords :
+            ans.append(t)
 
-    return tks
+    return ans
     pass
